@@ -14,3 +14,9 @@
 
 1. Set the img element as a const variable in the script
 2. Call a window.onload function to set the default src of the image when the page loads.
+
+## branch step-three
+
+1. make a button type="button" and an onclick event of some function name like showRandom()
+2. Make a showRandom() function that picks a random number between 1 and 6 using the math.random() method.
+3. set the src of the img element to the character for each random selection.

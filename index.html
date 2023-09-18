@@ -9,6 +9,7 @@
 
 <body>
     <img id="character-display" alt="one-piece-character" width="600" height="600" src="" />
+    <button id="choose-random" type="button" onclick="displayRandom()">Display random character</button>
     <script>
         // add the character image url src as CONST
         const luffySrc = "https://ih1.redbubble.net/image.1527839249.3138/st,small,507x507-pad,600x600,f8f8f8.jpg";
@@ -24,6 +25,23 @@
         const charDisplay = document.getElementById('character-display');
         charDisplay.src = onePieceSrc;
 
+        function displayRandom() {
+            let charNumber = Math.floor(Math.random() * 6) + 1;
+
+            if (charNumber === 1) {
+                charDisplay.src = luffySrc;
+            } else if (charNumber === 2) {
+                charDisplay.src = sanjiSrc;
+            } else if (charNumber === 3) {
+                charDisplay.src = namiSrc;
+            } else if (charNumber === 4) {
+                charDisplay.src = usoppSrc;
+            } else if (charNumber === 2) {
+                charDisplay.src = buggySrc;
+            } else {
+                charDisplay.src = chopperSrc;
+            }
+        }
     </script>
 </body>
 
